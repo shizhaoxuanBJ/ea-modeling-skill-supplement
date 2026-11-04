@@ -1,0 +1,11 @@
+domain_1,domain_2,C1_granularity,C2_interface_direction,C3_master_data_ownership,round2_total,round3_total,direct_interface
+Procurement,Finance,3,4,2,9,0,yes
+Finance,Treasury,3,3,2,8,0,yes
+Sales,Contract,2,3,2,7,0,yes
+Procurement,Contract,2,2,2,6,0,yes
+Contract,Finance,0,1,1,2,0,yes
+Contract,Treasury,1,1,0,2,0,yes
+Sales,Finance,0,0,0,0,0,no
+Procurement,Treasury,0,0,0,0,0,no
+Sales,Treasury,0,0,0,0,0,no
+Sales,Procurement,0,0,0,0,0,no

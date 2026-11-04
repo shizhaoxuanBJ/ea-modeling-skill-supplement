@@ -1,0 +1,43 @@
+{
+ "id": "generic-zh",
+ "description": "Generic Chinese profile: any industry, any organizational tiers. Generic names for the three layers; baseline from a medium-sized business domain. Labels below are Chinese output text.",
+ "lang": "zh",
+ "layers": {
+  "guide": "战略管控",
+  "exec": "业务执行",
+  "supp": "综合支撑"
+ },
+ "baseline": {
+  "guide": [
+   4,
+   20
+  ],
+  "exec": [
+   6,
+   30
+  ],
+  "supp": [
+   6,
+   20
+  ]
+ },
+ "naming": {
+  "l2": "cn4",
+  "l1_max": 6
+ },
+ "branding": {
+  "series": "",
+  "font_latin": "微软雅黑",
+  "font_ea": "微软雅黑"
+ },
+ "patterns": [
+  "negative-patterns.md"
+ ],
+ "org_tiers_hint": [
+  "总部",
+  "区域/事业部",
+  "分支机构",
+  "一线单元",
+  "外部方"
+ ]
+}

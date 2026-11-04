@@ -1,0 +1,28 @@
+{
+ "rulings": [
+  {
+   "id": "R-001",
+   "date": "2026-10-01",
+   "by": "EA governance board",
+   "issue": "Should shared components / shared objects be marked as cross-domain in single-domain views?",
+   "decision": "No cross-domain marking while domains are modeled one by one; decide uniformly after all business domains are modeled (criteria: repeated in >= 2 L1s or business lines + same business object + rules can be standardized)",
+   "suppress": [],
+   "writeback": [
+    "SKILL.md boundary clause",
+    "reference.md §3"
+   ]
+  },
+  {
+   "id": "R-002",
+   "date": "2026-10-01",
+   "by": "B3 layout rework (six rounds on the reference domain)",
+   "issue": "Arrows in value-stream diagrams are hard to read and the links look messy",
+   "decision": "One connector per link, exclusive ports, last segment >= 0.06\"; the hard thresholds of check_links are the acceptance criterion",
+   "suppress": [],
+   "writeback": [
+    "b3-flow-spec.md §5, §8",
+    "qa/check_links.py"
+   ]
+  }
+ ]
+}

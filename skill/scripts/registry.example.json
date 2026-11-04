@@ -1,0 +1,32 @@
+{
+ "objects": [
+  {
+   "name": "VAT Invoice",
+   "owner_domain": "Finance",
+   "aliases": [
+    "增值税发票",
+    "Tax Invoice"
+   ]
+  },
+  {
+   "name": "Payment Voucher",
+   "owner_domain": "Finance",
+   "aliases": [
+    "付款凭证",
+    "Payment Slip"
+   ]
+  },
+  {
+   "name": "Supplier Master Record",
+   "owner_domain": "Procurement",
+   "aliases": [
+    "供应商主数据"
+   ]
+  },
+  {
+   "name": "增值税发票",
+   "owner_domain": "财务域",
+   "aliases": []
+  }
+ ]
+}

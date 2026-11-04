@@ -1,0 +1,10 @@
+{
+ "id": "generic-en",
+ "description": "Generic English profile: any industry. Verb-object L2 names, measured text fitting for English labels.",
+ "extends": "generic-zh",
+ "lang": "en",
+ "layers": {"guide": "Strategic Control", "exec": "Business Execution", "supp": "Integrated Support"},
+ "naming": {"l2": "verb_object", "l1_max": 40},
+ "branding": {"series": "", "font_latin": "Arial", "font_ea": "微软雅黑"},
+ "org_tiers_hint": ["Headquarters", "Region / Division", "Branch", "Front-line unit", "External parties"]
+}

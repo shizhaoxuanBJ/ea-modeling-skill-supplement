@@ -1,0 +1,11 @@
+configuration,domain,runs,run_to_run_pairs,run_to_run_mean_pct,run_to_run_sd,inter_provider_mean_pct,inter_provider_sd,cross_domain_conflicts,uncaught_violation_rate_pct,syntax_mean,semantics_mean
+Round 3,Finance,10,45,97.8,0.8,95.2,1.2,0,,4.93,4.8
+Round 3,Procurement,10,45,97.1,1.0,94.1,1.6,0,,4.7,4.4
+Round 3,Sales,10,45,97.6,0.8,94.8,1.4,0,,4.9,4.7
+Round 3,Contract,10,45,96.8,1.1,93.8,1.8,0,,4.7,4.6
+Round 3,Treasury,10,45,97.7,0.7,95.1,1.3,0,,4.8,4.67
+Full skill,all five domains,50,225,97.4,0.9,94.6,1.5,0,0.0,4.82,4.65
+E1 baseline (rules in prompt),all five domains,50,225,61.8,8.4,53.4,7.6,29,34.2,3.12,2.86
+E2-A without judgment library,all five domains,50,225,81.2,5.1,72.4,5.8,19,0.0,4.46,3.38
+E2-B without validator,all five domains,50,225,88.5,3.8,84.2,4.2,11,18.6,3.74,4.42
+E2-C without IR,all five domains,50,225,76.4,6.2,68.5,6.5,14,0.0,4.52,3.24

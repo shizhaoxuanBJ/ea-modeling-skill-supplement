@@ -1,0 +1,3222 @@
+{
+ "domain": "Resource Management",
+ "series": "Construction Group · Enterprise Architecture",
+ "intro": [
+  "Resource management capability framework: materials, owned equipment and labor for engineering projects, organized as Strategic Control - Business Execution - Integrated Support, across four tiers (Group HQ - Subsidiary - Branch - Project Dept.).",
+  "Business execution follows five stages: Demand Planning - Sourcing & Contracting - Receipt & Mobilization - Site Operation - Settlement & Exit."
+ ],
+ "note": "Note | Strategic control = HQ governance of resources; business execution = end-to-end resource value chain on projects; integrated support = services from other functions. L2 names are verb-object phrases; L3 components are listed in the inventory workbook.",
+ "layers": {
+  "guide": {
+   "label": "Strategic Control",
+   "blocks": [
+    {
+     "l1": "Governance & Standards",
+     "l2": [
+      "Set Resource Policies",
+      "Maintain Consumption Norms",
+      "Standardize Resource Codes",
+      "Plan Equipment Fleet",
+      "Define Approval Authority"
+     ]
+    },
+    {
+     "l1": "Procurement Control",
+     "l2": [
+      "Govern Sourcing Strategy",
+      "Supervise Tender Compliance",
+      "Benchmark Purchase Prices",
+      "Control Contract Terms"
+     ]
+    },
+    {
+     "l1": "Risk & Compliance",
+     "l2": [
+      "Manage Supplier Credit",
+      "Supervise Wage Payment",
+      "Control Equipment Safety",
+      "Control Inventory Risk"
+     ]
+    },
+    {
+     "l1": "Performance Oversight",
+     "l2": [
+      "Define Resource KPIs",
+      "Monitor Resource Dashboards",
+      "Assess Unit Performance",
+      "Enforce Accountability"
+     ]
+    }
+   ]
+  },
+  "exec": {
+   "label": "Business Execution",
+   "blocks": [
+    {
+     "l1": "Demand Planning",
+     "l2": [
+      "Forecast Resource Demand",
+      "Compile Resource Plans",
+      "Balance Internal Resource Pool",
+      "Approve Procurement Plans",
+      "Set Resource Cost Targets"
+     ]
+    },
+    {
+     "l1": "Sourcing & Contracting",
+     "l2": [
+      "Register Suppliers",
+      "Qualify Suppliers",
+      "Run Centralized Tenders",
+      "Award Framework Agreements",
+      "Sign Purchase Contracts",
+      "Purchase Equipment",
+      "Contract Labor Subcontractors"
+     ]
+    },
+    {
+     "l1": "Receipt & Mobilization",
+     "l2": [
+      "Inspect Incoming Materials",
+      "Receive Owner-Supplied Materials",
+      "Receive Materials into Store",
+      "Mobilize Equipment",
+      "Register Workers by Real Name",
+      "Induct and Train Workers"
+     ]
+    },
+    {
+     "l1": "Site Operation",
+     "l2": [
+      "Issue Materials by Quota",
+      "Manage Turnover Materials",
+      "Count and Track Inventory",
+      "Dispatch Equipment",
+      "Maintain Equipment",
+      "Inspect Special Equipment",
+      "Track Worker Attendance"
+     ]
+    },
+    {
+     "l1": "Settlement & Exit",
+     "l2": [
+      "Settle Material Accounts",
+      "Settle Internal Equipment Leases",
+      "Settle Labor Subcontracts",
+      "Pay Worker Wages",
+      "Demobilize Resources",
+      "Dispose of Surplus and Scrap",
+      "Retire Equipment Assets",
+      "Evaluate Supplier Performance"
+     ]
+    }
+   ]
+  },
+  "supp": {
+   "label": "Integrated Support",
+   "blocks": [
+    {
+     "l1": "Finance Management",
+     "l2": [
+      "Process Supplier Payments",
+      "Account for Inventory",
+      "Depreciate Fixed Assets",
+      "Verify Tax Invoices",
+      "Manage Wage Escrow Accounts"
+     ]
+    },
+    {
+     "l1": "Legal Affairs",
+     "l2": [
+      "Review Contracts",
+      "Handle Supplier Disputes"
+     ]
+    },
+    {
+     "l1": "Human Resources",
+     "l2": [
+      "Certify Special Operators",
+      "Staff Resource Teams"
+     ]
+    },
+    {
+     "l1": "IT & Digital",
+     "l2": [
+      "Operate Resource Systems",
+      "Maintain IoT Devices",
+      "Provide Data Services"
+     ]
+    },
+    {
+     "l1": "Audit & Discipline",
+     "l2": [
+      "Audit Procurement",
+      "Investigate Violations"
+     ]
+    }
+   ]
+  }
+ },
+ "b2": {
+  "note": "Note | Each L2 capability is broken into L3 business components that pass four tests (single responsibility / independently operable / loosely coupled / enterprise-governed); rules, norms and standards are attributes, not components. Cross-domain shared components will be identified after all domains are mapped.",
+  "layers": {
+   "guide": [
+    {
+     "l1": "Governance & Standards",
+     "l2s": [
+      {
+       "l2": "Set Resource Policies",
+       "comps": [
+        {
+         "name": "Draft Resource Policies",
+         "shared": false
+        },
+        {
+         "name": "Publish Policies",
+         "shared": false
+        },
+        {
+         "name": "Review Policy Execution",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Maintain Consumption Norms",
+       "comps": [
+        {
+         "name": "Measure Consumption Norms",
+         "shared": false
+        },
+        {
+         "name": "Publish Norm Library",
+         "shared": false
+        },
+        {
+         "name": "Revise Norms",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Standardize Resource Codes",
+       "comps": [
+        {
+         "name": "Maintain Material Codes",
+         "shared": false
+        },
+        {
+         "name": "Maintain Equipment Codes",
+         "shared": false
+        },
+        {
+         "name": "Maintain Labor Trade Codes",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Plan Equipment Fleet",
+       "comps": [
+        {
+         "name": "Analyze Fleet Utilization",
+         "shared": false
+        },
+        {
+         "name": "Compile Fleet Investment Plan",
+         "shared": false
+        },
+        {
+         "name": "Set Internal Lease Rates",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Define Approval Authority",
+       "comps": [
+        {
+         "name": "Define Authority Matrix",
+         "shared": false
+        },
+        {
+         "name": "Approve Exception Requests",
+         "shared": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "l1": "Procurement Control",
+     "l2s": [
+      {
+       "l2": "Govern Sourcing Strategy",
+       "comps": [
+        {
+         "name": "Define Central Procurement Catalog",
+         "shared": false
+        },
+        {
+         "name": "Set Sourcing Thresholds",
+         "shared": false
+        },
+        {
+         "name": "Assign Procurement Levels",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Supervise Tender Compliance",
+       "comps": [
+        {
+         "name": "Monitor Tender Process",
+         "shared": false
+        },
+        {
+         "name": "Review Award Exceptions",
+         "shared": false
+        },
+        {
+         "name": "Handle Tender Complaints",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Benchmark Purchase Prices",
+       "comps": [
+        {
+         "name": "Collect Market Prices",
+         "shared": false
+        },
+        {
+         "name": "Publish Price Benchmarks",
+         "shared": false
+        },
+        {
+         "name": "Flag Price Deviations",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Control Contract Terms",
+       "comps": [
+        {
+         "name": "Issue Model Contracts",
+         "shared": false
+        },
+        {
+         "name": "Review Nonstandard Terms",
+         "shared": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "l1": "Risk & Compliance",
+     "l2s": [
+      {
+       "l2": "Manage Supplier Credit",
+       "comps": [
+        {
+         "name": "Maintain Supplier Blacklist",
+         "shared": false
+        },
+        {
+         "name": "Rate Supplier Credit",
+         "shared": false
+        },
+        {
+         "name": "Share Credit Results",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Supervise Wage Payment",
+       "comps": [
+        {
+         "name": "Monitor Escrow Payments",
+         "shared": false
+        },
+        {
+         "name": "Handle Wage Arrears Complaints",
+         "shared": false
+        },
+        {
+         "name": "Report Wage Compliance",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Control Equipment Safety",
+       "comps": [
+        {
+         "name": "Inspect Equipment Safety",
+         "shared": false
+        },
+        {
+         "name": "Track Hazard Rectification",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Control Inventory Risk",
+       "comps": [
+        {
+         "name": "Monitor Overstock and Slow Stock",
+         "shared": false
+        },
+        {
+         "name": "Warn on Material Loss",
+         "shared": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "l1": "Performance Oversight",
+     "l2s": [
+      {
+       "l2": "Define Resource KPIs",
+       "comps": [
+        {
+         "name": "Define KPI Library",
+         "shared": false
+        },
+        {
+         "name": "Set Annual KPI Targets",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Monitor Resource Dashboards",
+       "comps": [
+        {
+         "name": "Aggregate Resource Data",
+         "shared": false
+        },
+        {
+         "name": "Publish Resource Dashboards",
+         "shared": false
+        },
+        {
+         "name": "Trigger Alerts",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Assess Unit Performance",
+       "comps": [
+        {
+         "name": "Score Subsidiary Performance",
+         "shared": false
+        },
+        {
+         "name": "Rank Project Performance",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Enforce Accountability",
+       "comps": [
+        {
+         "name": "Issue Rectification Notices",
+         "shared": false
+        },
+        {
+         "name": "Hold Units Accountable",
+         "shared": false
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "exec": [
+    {
+     "l1": "Demand Planning",
+     "l2s": [
+      {
+       "l2": "Forecast Resource Demand",
+       "comps": [
+        {
+         "name": "Extract BOQ Quantities",
+         "shared": false
+        },
+        {
+         "name": "Map Schedule to Resource Needs",
+         "shared": false
+        },
+        {
+         "name": "Forecast Labor Headcount",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Compile Resource Plans",
+       "comps": [
+        {
+         "name": "Compile Material Requirement Plan",
+         "shared": false
+        },
+        {
+         "name": "Compile Equipment Deployment Plan",
+         "shared": false
+        },
+        {
+         "name": "Compile Labor Deployment Plan",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Balance Internal Resource Pool",
+       "comps": [
+        {
+         "name": "Check Idle Inventory Across Projects",
+         "shared": false
+        },
+        {
+         "name": "Match Idle Equipment",
+         "shared": false
+        },
+        {
+         "name": "Transfer Surplus Materials",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Approve Procurement Plans",
+       "comps": [
+        {
+         "name": "Review Procurement Plan",
+         "shared": false
+        },
+        {
+         "name": "Classify Procurement Level",
+         "shared": false
+        },
+        {
+         "name": "Release Approved Plan",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Set Resource Cost Targets",
+       "comps": [
+        {
+         "name": "Set Material Price Targets",
+         "shared": false
+        },
+        {
+         "name": "Set Consumption Loss Rates",
+         "shared": false
+        },
+        {
+         "name": "Set Equipment Cost Budget",
+         "shared": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "l1": "Sourcing & Contracting",
+     "l2s": [
+      {
+       "l2": "Register Suppliers",
+       "comps": [
+        {
+         "name": "Collect Supplier Credentials",
+         "shared": false
+        },
+        {
+         "name": "Establish Supplier Master Data",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Qualify Suppliers",
+       "comps": [
+        {
+         "name": "Review Supplier Qualifications",
+         "shared": false
+        },
+        {
+         "name": "Inspect Supplier Facilities",
+         "shared": false
+        },
+        {
+         "name": "Grade Suppliers",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Run Centralized Tenders",
+       "comps": [
+        {
+         "name": "Prepare Tender Documents",
+         "shared": false
+        },
+        {
+         "name": "Evaluate Bids",
+         "shared": false
+        },
+        {
+         "name": "Publish Award Results",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Award Framework Agreements",
+       "comps": [
+        {
+         "name": "Negotiate Framework Prices",
+         "shared": false
+        },
+        {
+         "name": "Sign Framework Agreements",
+         "shared": false
+        },
+        {
+         "name": "Call Off Under Framework",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Sign Purchase Contracts",
+       "comps": [
+        {
+         "name": "Draft Purchase Contract",
+         "shared": false
+        },
+        {
+         "name": "Approve Purchase Contract",
+         "shared": false
+        },
+        {
+         "name": "File Signed Contract",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Purchase Equipment",
+       "comps": [
+        {
+         "name": "Justify Equipment Purchase",
+         "shared": false
+        },
+        {
+         "name": "Tender Equipment Purchase",
+         "shared": false
+        },
+        {
+         "name": "Accept Delivered Equipment",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Contract Labor Subcontractors",
+       "comps": [
+        {
+         "name": "Select Labor Subcontractor",
+         "shared": false
+        },
+        {
+         "name": "Sign Labor Subcontract",
+         "shared": false
+        },
+        {
+         "name": "File Labor Contract with Authority",
+         "shared": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "l1": "Receipt & Mobilization",
+     "l2s": [
+      {
+       "l2": "Inspect Incoming Materials",
+       "comps": [
+        {
+         "name": "Check Delivery Against Order",
+         "shared": false
+        },
+        {
+         "name": "Sample and Test Materials",
+         "shared": false
+        },
+        {
+         "name": "Handle Nonconforming Materials",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Receive Owner-Supplied Materials",
+       "comps": [
+        {
+         "name": "Confirm Owner Supply Schedule",
+         "shared": false
+        },
+        {
+         "name": "Sign for Owner Supply",
+         "shared": false
+        },
+        {
+         "name": "Reconcile Owner Supply Quantities",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Receive Materials into Store",
+       "comps": [
+        {
+         "name": "Post Goods Receipt",
+         "shared": false
+        },
+        {
+         "name": "Store and Label Materials",
+         "shared": false
+        },
+        {
+         "name": "Process Direct-to-Site Delivery",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Mobilize Equipment",
+       "comps": [
+        {
+         "name": "Issue Equipment Transfer Order",
+         "shared": false
+        },
+        {
+         "name": "Transport and Install Equipment",
+         "shared": false
+        },
+        {
+         "name": "Accept Equipment on Site",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Register Workers by Real Name",
+       "comps": [
+        {
+         "name": "Collect Worker Identity Data",
+         "shared": false
+        },
+        {
+         "name": "Sign Individual Labor Contracts",
+         "shared": false
+        },
+        {
+         "name": "Enroll Biometric Access",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Induct and Train Workers",
+       "comps": [
+        {
+         "name": "Deliver Safety Induction",
+         "shared": false
+        },
+        {
+         "name": "Conduct Technical Briefing",
+         "shared": false
+        },
+        {
+         "name": "Verify Operator Certificates",
+         "shared": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "l1": "Site Operation",
+     "l2s": [
+      {
+       "l2": "Issue Materials by Quota",
+       "comps": [
+        {
+         "name": "Raise Quota Requisition",
+         "shared": false
+        },
+        {
+         "name": "Issue Materials from Store",
+         "shared": false
+        },
+        {
+         "name": "Approve Over-Quota Issue",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Manage Turnover Materials",
+       "comps": [
+        {
+         "name": "Issue Turnover Materials",
+         "shared": false
+        },
+        {
+         "name": "Track Turnover Usage and Loss",
+         "shared": false
+        },
+        {
+         "name": "Return Turnover Materials",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Count and Track Inventory",
+       "comps": [
+        {
+         "name": "Run Periodic Stocktake",
+         "shared": false
+        },
+        {
+         "name": "Reconcile Book and Physical Stock",
+         "shared": false
+        },
+        {
+         "name": "Analyze Material Variances",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Dispatch Equipment",
+       "comps": [
+        {
+         "name": "Schedule Equipment Shifts",
+         "shared": false
+        },
+        {
+         "name": "Record Operating Hours",
+         "shared": false
+        },
+        {
+         "name": "Record Fuel Consumption",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Maintain Equipment",
+       "comps": [
+        {
+         "name": "Plan Preventive Maintenance",
+         "shared": false
+        },
+        {
+         "name": "Repair Equipment Faults",
+         "shared": false
+        },
+        {
+         "name": "Perform Equipment Overhaul",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Inspect Special Equipment",
+       "comps": [
+        {
+         "name": "Register Special Equipment",
+         "shared": false
+        },
+        {
+         "name": "Arrange Statutory Inspection",
+         "shared": false
+        },
+        {
+         "name": "Rectify Inspection Findings",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Track Worker Attendance",
+       "comps": [
+        {
+         "name": "Record Daily Attendance",
+         "shared": false
+        },
+        {
+         "name": "Compile Monthly Work Hours",
+         "shared": false
+        },
+        {
+         "name": "Confirm Attendance with Subcontractor",
+         "shared": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "l1": "Settlement & Exit",
+     "l2s": [
+      {
+       "l2": "Settle Material Accounts",
+       "comps": [
+        {
+         "name": "Reconcile Supplier Statements",
+         "shared": false
+        },
+        {
+         "name": "Prepare Material Settlement",
+         "shared": false
+        },
+        {
+         "name": "Approve Material Settlement",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Settle Internal Equipment Leases",
+       "comps": [
+        {
+         "name": "Calculate Internal Lease Charges",
+         "shared": false
+        },
+        {
+         "name": "Confirm Lease Charges with Project",
+         "shared": false
+        },
+        {
+         "name": "Post Internal Lease Settlement",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Settle Labor Subcontracts",
+       "comps": [
+        {
+         "name": "Measure Labor Work Done",
+         "shared": false
+        },
+        {
+         "name": "Prepare Labor Settlement",
+         "shared": false
+        },
+        {
+         "name": "Approve Labor Settlement",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Pay Worker Wages",
+       "comps": [
+        {
+         "name": "Prepare Wage Payroll",
+         "shared": false
+        },
+        {
+         "name": "Confirm Payroll with Workers",
+         "shared": false
+        },
+        {
+         "name": "Pay Wages via Escrow Account",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Demobilize Resources",
+       "comps": [
+        {
+         "name": "Return Equipment to Pool",
+         "shared": false
+        },
+        {
+         "name": "Clear Site Store",
+         "shared": false
+        },
+        {
+         "name": "Release Workers and Close Records",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Dispose of Surplus and Scrap",
+       "comps": [
+        {
+         "name": "Identify Surplus and Scrap",
+         "shared": false
+        },
+        {
+         "name": "Appraise Disposal Value",
+         "shared": false
+        },
+        {
+         "name": "Sell or Transfer Surplus",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Retire Equipment Assets",
+       "comps": [
+        {
+         "name": "Assess Equipment Condition",
+         "shared": false
+        },
+        {
+         "name": "Approve Equipment Retirement",
+         "shared": false
+        },
+        {
+         "name": "Dispose of Retired Equipment",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Evaluate Supplier Performance",
+       "comps": [
+        {
+         "name": "Score Supplier Performance",
+         "shared": false
+        },
+        {
+         "name": "Apply Rewards and Penalties",
+         "shared": false
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "supp": [
+    {
+     "l1": "Finance Management",
+     "l2s": [
+      {
+       "l2": "Process Supplier Payments",
+       "comps": [
+        {
+         "name": "Execute Supplier Payment",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Account for Inventory",
+       "comps": [
+        {
+         "name": "Post Inventory Entries",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Depreciate Fixed Assets",
+       "comps": [
+        {
+         "name": "Calculate Equipment Depreciation",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Verify Tax Invoices",
+       "comps": [
+        {
+         "name": "Verify VAT Invoices",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Manage Wage Escrow Accounts",
+       "comps": [
+        {
+         "name": "Operate Wage Escrow Account",
+         "shared": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "l1": "Legal Affairs",
+     "l2s": [
+      {
+       "l2": "Review Contracts",
+       "comps": [
+        {
+         "name": "Legal Review of Contracts",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Handle Supplier Disputes",
+       "comps": [
+        {
+         "name": "Litigate Supplier Disputes",
+         "shared": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "l1": "Human Resources",
+     "l2s": [
+      {
+       "l2": "Certify Special Operators",
+       "comps": [
+        {
+         "name": "Train and Certify Operators",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Staff Resource Teams",
+       "comps": [
+        {
+         "name": "Assign Resource Staff",
+         "shared": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "l1": "IT & Digital",
+     "l2s": [
+      {
+       "l2": "Operate Resource Systems",
+       "comps": [
+        {
+         "name": "Support Resource Systems",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Maintain IoT Devices",
+       "comps": [
+        {
+         "name": "Maintain Site IoT Devices",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Provide Data Services",
+       "comps": [
+        {
+         "name": "Provide Resource Data Services",
+         "shared": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "l1": "Audit & Discipline",
+     "l2s": [
+      {
+       "l2": "Audit Procurement",
+       "comps": [
+        {
+         "name": "Conduct Procurement Audits",
+         "shared": false
+        }
+       ]
+      },
+      {
+       "l2": "Investigate Violations",
+       "comps": [
+        {
+         "name": "Investigate Procurement Violations",
+         "shared": false
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "b4": {
+  "supp_skip_group": true,
+  "note": "Columns = capability domains (aligned with B1) | grey bars = L2 groups | cells = business objects (real form/ledger names); details in the inventory workbook",
+  "layers": {
+   "guide": [
+    {
+     "l1": "Governance & Standards",
+     "groups": [
+      {
+       "g": "Set Resource Policies",
+       "objs": [
+        "Resource Management Policy"
+       ]
+      },
+      {
+       "g": "Maintain Consumption Norms",
+       "objs": [
+        "Material Consumption Norms"
+       ]
+      },
+      {
+       "g": "Standardize Resource Codes",
+       "objs": [
+        "Resource Code Catalog"
+       ]
+      },
+      {
+       "g": "Plan Equipment Fleet",
+       "objs": [
+        "Fleet Investment Plan",
+        "Internal Lease Rate Table"
+       ]
+      },
+      {
+       "g": "Define Approval Authority",
+       "objs": [
+        "Approval Authority Matrix"
+       ]
+      }
+     ]
+    },
+    {
+     "l1": "Procurement Control",
+     "groups": [
+      {
+       "g": "Govern Sourcing Strategy",
+       "objs": [
+        "Central Procurement Catalog"
+       ]
+      },
+      {
+       "g": "Supervise Tender Compliance",
+       "objs": [
+        "Tender Compliance Review"
+       ]
+      },
+      {
+       "g": "Benchmark Purchase Prices",
+       "objs": [
+        "Price Benchmark Bulletin"
+       ]
+      },
+      {
+       "g": "Control Contract Terms",
+       "objs": [
+        "Model Contract Templates"
+       ]
+      }
+     ]
+    },
+    {
+     "l1": "Risk & Compliance",
+     "groups": [
+      {
+       "g": "Manage Supplier Credit",
+       "objs": [
+        "Supplier Blacklist"
+       ]
+      },
+      {
+       "g": "Supervise Wage Payment",
+       "objs": [
+        "Wage Compliance Report"
+       ]
+      },
+      {
+       "g": "Control Equipment Safety",
+       "objs": [
+        "Hazard Rectification Notice"
+       ]
+      },
+      {
+       "g": "Control Inventory Risk",
+       "objs": [
+        "Slow-Moving Stock Alert"
+       ]
+      }
+     ]
+    },
+    {
+     "l1": "Performance Oversight",
+     "groups": [
+      {
+       "g": "Define Resource KPIs",
+       "objs": [
+        "Resource KPI Library"
+       ]
+      },
+      {
+       "g": "Monitor Resource Dashboards",
+       "objs": [
+        "Resource Dashboard"
+       ]
+      },
+      {
+       "g": "Assess Unit Performance",
+       "objs": [
+        "Unit Performance Assessment"
+       ]
+      },
+      {
+       "g": "Enforce Accountability",
+       "objs": [
+        "Accountability Notice"
+       ]
+      }
+     ]
+    }
+   ],
+   "exec": [
+    {
+     "l1": "Demand Planning",
+     "groups": [
+      {
+       "g": "Forecast Resource Demand",
+       "objs": [
+        "BOQ Resource Takeoff"
+       ]
+      },
+      {
+       "g": "Compile Resource Plans",
+       "objs": [
+        "Material Requirement Plan",
+        "Equipment Deployment Plan",
+        "Labor Deployment Plan"
+       ]
+      },
+      {
+       "g": "Balance Internal Resource Pool",
+       "objs": [
+        "Idle Resource Register",
+        "Internal Transfer Order"
+       ]
+      },
+      {
+       "g": "Approve Procurement Plans",
+       "objs": [
+        "Procurement Plan"
+       ]
+      },
+      {
+       "g": "Set Resource Cost Targets",
+       "objs": [
+        "Resource Cost Target Sheet"
+       ]
+      }
+     ]
+    },
+    {
+     "l1": "Sourcing & Contracting",
+     "groups": [
+      {
+       "g": "Register Suppliers",
+       "objs": [
+        "Supplier Registration Form"
+       ]
+      },
+      {
+       "g": "Qualify Suppliers",
+       "objs": [
+        "Supplier Qualification Report",
+        "Qualified Supplier List"
+       ]
+      },
+      {
+       "g": "Run Centralized Tenders",
+       "objs": [
+        "Tender Documents",
+        "Bid Evaluation Report",
+        "Award Notice"
+       ]
+      },
+      {
+       "g": "Award Framework Agreements",
+       "objs": [
+        "Framework Agreement"
+       ]
+      },
+      {
+       "g": "Sign Purchase Contracts",
+       "objs": [
+        "Material Purchase Contract"
+       ]
+      },
+      {
+       "g": "Purchase Equipment",
+       "objs": [
+        "Equipment Purchase Request",
+        "Equipment Acceptance Certificate"
+       ]
+      },
+      {
+       "g": "Contract Labor Subcontractors",
+       "objs": [
+        "Labor Subcontract"
+       ]
+      }
+     ]
+    },
+    {
+     "l1": "Receipt & Mobilization",
+     "groups": [
+      {
+       "g": "Inspect Incoming Materials",
+       "objs": [
+        "Material Inspection Record",
+        "Material Test Report",
+        "Nonconformance Report"
+       ]
+      },
+      {
+       "g": "Receive Owner-Supplied Materials",
+       "objs": [
+        "Owner-Supplied Material Receipt"
+       ]
+      },
+      {
+       "g": "Receive Materials into Store",
+       "objs": [
+        "Goods Receipt Note"
+       ]
+      },
+      {
+       "g": "Mobilize Equipment",
+       "objs": [
+        "Equipment Transfer Order",
+        "Equipment Site Acceptance"
+       ]
+      },
+      {
+       "g": "Register Workers by Real Name",
+       "objs": [
+        "Worker Real-Name Roster",
+        "Individual Labor Contract"
+       ]
+      },
+      {
+       "g": "Induct and Train Workers",
+       "objs": [
+        "Safety Induction Record"
+       ]
+      }
+     ]
+    },
+    {
+     "l1": "Site Operation",
+     "groups": [
+      {
+       "g": "Issue Materials by Quota",
+       "objs": [
+        "Quota Requisition Slip",
+        "Material Issue Note"
+       ]
+      },
+      {
+       "g": "Manage Turnover Materials",
+       "objs": [
+        "Turnover Material Ledger"
+       ]
+      },
+      {
+       "g": "Count and Track Inventory",
+       "objs": [
+        "Stocktake Report",
+        "Material Variance Analysis"
+       ]
+      },
+      {
+       "g": "Dispatch Equipment",
+       "objs": [
+        "Equipment Operation Log",
+        "Fuel Consumption Record"
+       ]
+      },
+      {
+       "g": "Maintain Equipment",
+       "objs": [
+        "Maintenance Work Order",
+        "Equipment Overhaul Report"
+       ]
+      },
+      {
+       "g": "Inspect Special Equipment",
+       "objs": [
+        "Special Equip. Inspection Cert."
+       ]
+      },
+      {
+       "g": "Track Worker Attendance",
+       "objs": [
+        "Worker Attendance Sheet"
+       ]
+      }
+     ]
+    },
+    {
+     "l1": "Settlement & Exit",
+     "groups": [
+      {
+       "g": "Settle Material Accounts",
+       "objs": [
+        "Supplier Reconciliation Statement",
+        "Material Settlement Sheet"
+       ]
+      },
+      {
+       "g": "Settle Internal Equipment Leases",
+       "objs": [
+        "Internal Lease Settlement"
+       ]
+      },
+      {
+       "g": "Settle Labor Subcontracts",
+       "objs": [
+        "Labor Work Measurement",
+        "Labor Settlement Sheet"
+       ]
+      },
+      {
+       "g": "Pay Worker Wages",
+       "objs": [
+        "Wage Payroll"
+       ]
+      },
+      {
+       "g": "Demobilize Resources",
+       "objs": [
+        "Demobilization Checklist"
+       ]
+      },
+      {
+       "g": "Dispose of Surplus and Scrap",
+       "objs": [
+        "Surplus & Scrap Disposal Request"
+       ]
+      },
+      {
+       "g": "Retire Equipment Assets",
+       "objs": [
+        "Equipment Retirement Approval"
+       ]
+      },
+      {
+       "g": "Evaluate Supplier Performance",
+       "objs": [
+        "Supplier Performance Scorecard"
+       ]
+      }
+     ]
+    }
+   ],
+   "supp": [
+    {
+     "l1": "Finance Management",
+     "groups": [
+      {
+       "g": "Process Supplier Payments",
+       "objs": [
+        "Payment Voucher",
+        "Equipment Asset Card",
+        "VAT Invoice",
+        "Escrow Wage Payment Record"
+       ]
+      }
+     ]
+    },
+    {
+     "l1": "Legal Affairs",
+     "groups": [
+      {
+       "g": "Review Contracts",
+       "objs": [
+        "Contract Legal Opinion"
+       ]
+      }
+     ]
+    },
+    {
+     "l1": "Human Resources",
+     "groups": [
+      {
+       "g": "Certify Special Operators",
+       "objs": [
+        "Operator Certificate Register"
+       ]
+      }
+     ]
+    },
+    {
+     "l1": "Audit & Discipline",
+     "groups": [
+      {
+       "g": "Audit Procurement",
+       "objs": [
+        "Procurement Audit Report"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "b5": {
+  "roles": [
+   {
+    "key": "HRD",
+    "level": "Group HQ",
+    "name": "Resource\nDept"
+   },
+   {
+    "key": "HCP",
+    "level": "Group HQ",
+    "name": "Central\nProcure."
+   },
+   {
+    "key": "HSV",
+    "level": "Group HQ",
+    "name": "Super-\nvision"
+   },
+   {
+    "key": "HLA",
+    "level": "Group HQ",
+    "name": "Legal &\nAudit"
+   },
+   {
+    "key": "SRD",
+    "level": "Subsidiary",
+    "name": "Resource\nDept"
+   },
+   {
+    "key": "SEQ",
+    "level": "Subsidiary",
+    "name": "Equip.\nCenter"
+   },
+   {
+    "key": "SFN",
+    "level": "Subsidiary",
+    "name": "Finance\nDept"
+   },
+   {
+    "key": "BRD",
+    "level": "Branch",
+    "name": "Resource\nDept"
+   },
+   {
+    "key": "BCM",
+    "level": "Branch",
+    "name": "Commer-\ncial Dept"
+   },
+   {
+    "key": "PM",
+    "level": "Project",
+    "name": "Project\nManager"
+   },
+   {
+    "key": "PMT",
+    "level": "Project",
+    "name": "Material\nManager"
+   },
+   {
+    "key": "PEQ",
+    "level": "Project",
+    "name": "Equip.\nManager"
+   },
+   {
+    "key": "PLB",
+    "level": "Project",
+    "name": "Labor\nManager"
+   },
+   {
+    "key": "PCM",
+    "level": "Project",
+    "name": "Commer.\nManager"
+   },
+   {
+    "key": "PSK",
+    "level": "Project",
+    "name": "Store-\nkeeper"
+   },
+   {
+    "key": "SUP",
+    "level": "External",
+    "name": "Supplier"
+   },
+   {
+    "key": "LSC",
+    "level": "External",
+    "name": "Labor\nSubcon."
+   },
+   {
+    "key": "OWN",
+    "level": "External",
+    "name": "Owner"
+   }
+  ],
+  "pages": [
+   {
+    "title": "Strategic Control",
+    "l1s": [
+     "Governance & Standards",
+     "Procurement Control",
+     "Risk & Compliance",
+     "Performance Oversight"
+    ]
+   },
+   {
+    "title": "Planning & Sourcing",
+    "l1s": [
+     "Demand Planning",
+     "Sourcing & Contracting"
+    ]
+   },
+   {
+    "title": "Receipt & Site Operation",
+    "l1s": [
+     "Receipt & Mobilization",
+     "Site Operation"
+    ]
+   },
+   {
+    "title": "Settlement & Support",
+    "l1s": [
+     "Settlement & Exit",
+     "Finance Management",
+     "Legal Affairs",
+     "Human Resources",
+     "IT & Digital",
+     "Audit & Discipline"
+    ]
+   }
+  ],
+  "rows": [
+   {
+    "l1": "Governance & Standards",
+    "l2": "Set Resource Policies",
+    "object": "Resource Management Policy",
+    "c": "HRD",
+    "u": [
+     "SRD",
+     "BRD",
+     "PM"
+    ]
+   },
+   {
+    "l1": "Governance & Standards",
+    "l2": "Maintain Consumption Norms",
+    "object": "Material Consumption Norms",
+    "c": "HRD",
+    "u": [
+     "BCM",
+     "PCM",
+     "PMT"
+    ]
+   },
+   {
+    "l1": "Governance & Standards",
+    "l2": "Standardize Resource Codes",
+    "object": "Resource Code Catalog",
+    "c": "HRD",
+    "u": [
+     "SRD",
+     "BRD",
+     "PMT",
+     "PEQ"
+    ]
+   },
+   {
+    "l1": "Governance & Standards",
+    "l2": "Plan Equipment Fleet",
+    "object": "Fleet Investment Plan",
+    "c": "HRD",
+    "u": [
+     "SEQ",
+     "SFN"
+    ]
+   },
+   {
+    "l1": "Governance & Standards",
+    "l2": "Plan Equipment Fleet",
+    "object": "Internal Lease Rate Table",
+    "c": "HRD",
+    "u": [
+     "SEQ",
+     "PCM"
+    ]
+   },
+   {
+    "l1": "Governance & Standards",
+    "l2": "Define Approval Authority",
+    "object": "Approval Authority Matrix",
+    "c": "HRD",
+    "u": [
+     "SRD",
+     "BRD"
+    ]
+   },
+   {
+    "l1": "Procurement Control",
+    "l2": "Govern Sourcing Strategy",
+    "object": "Central Procurement Catalog",
+    "c": "HCP",
+    "u": [
+     "SRD",
+     "BRD",
+     "PMT"
+    ]
+   },
+   {
+    "l1": "Procurement Control",
+    "l2": "Supervise Tender Compliance",
+    "object": "Tender Compliance Review",
+    "c": "HSV",
+    "u": [
+     "HCP",
+     "HRD"
+    ]
+   },
+   {
+    "l1": "Procurement Control",
+    "l2": "Benchmark Purchase Prices",
+    "object": "Price Benchmark Bulletin",
+    "c": "HCP",
+    "u": [
+     "SRD",
+     "BRD",
+     "PMT"
+    ]
+   },
+   {
+    "l1": "Procurement Control",
+    "l2": "Control Contract Terms",
+    "object": "Model Contract Templates",
+    "c": "HLA",
+    "u": [
+     "BRD",
+     "BCM"
+    ]
+   },
+   {
+    "l1": "Risk & Compliance",
+    "l2": "Manage Supplier Credit",
+    "object": "Supplier Blacklist",
+    "c": "HRD",
+    "u": [
+     "HCP",
+     "SRD",
+     "BRD"
+    ]
+   },
+   {
+    "l1": "Risk & Compliance",
+    "l2": "Supervise Wage Payment",
+    "object": "Wage Compliance Report",
+    "c": "HSV",
+    "u": [
+     "HRD",
+     "SRD",
+     "BRD"
+    ]
+   },
+   {
+    "l1": "Risk & Compliance",
+    "l2": "Control Equipment Safety",
+    "object": "Hazard Rectification Notice",
+    "c": "HSV",
+    "u": [
+     "SEQ",
+     "PEQ"
+    ]
+   },
+   {
+    "l1": "Risk & Compliance",
+    "l2": "Control Inventory Risk",
+    "object": "Slow-Moving Stock Alert",
+    "c": "HSV",
+    "u": [
+     "SRD",
+     "BRD",
+     "PMT"
+    ]
+   },
+   {
+    "l1": "Performance Oversight",
+    "l2": "Define Resource KPIs",
+    "object": "Resource KPI Library",
+    "c": "HSV",
+    "u": [
+     "SRD",
+     "BRD"
+    ]
+   },
+   {
+    "l1": "Performance Oversight",
+    "l2": "Monitor Resource Dashboards",
+    "object": "Resource Dashboard",
+    "c": "HSV",
+    "u": [
+     "HRD",
+     "SRD",
+     "BRD"
+    ]
+   },
+   {
+    "l1": "Performance Oversight",
+    "l2": "Assess Unit Performance",
+    "object": "Unit Performance Assessment",
+    "c": "HRD",
+    "u": [
+     "SRD",
+     "BRD"
+    ]
+   },
+   {
+    "l1": "Performance Oversight",
+    "l2": "Enforce Accountability",
+    "object": "Accountability Notice",
+    "c": "HSV",
+    "u": [
+     "SRD",
+     "BRD"
+    ]
+   },
+   {
+    "l1": "Demand Planning",
+    "l2": "Forecast Resource Demand",
+    "object": "BOQ Resource Takeoff",
+    "c": "PCM",
+    "u": [
+     "PMT",
+     "PEQ",
+     "PLB"
+    ]
+   },
+   {
+    "l1": "Demand Planning",
+    "l2": "Compile Resource Plans",
+    "object": "Material Requirement Plan",
+    "c": "PMT",
+    "u": [
+     "PM",
+     "BRD",
+     "SRD"
+    ]
+   },
+   {
+    "l1": "Demand Planning",
+    "l2": "Compile Resource Plans",
+    "object": "Equipment Deployment Plan",
+    "c": "PEQ",
+    "u": [
+     "PM",
+     "SEQ"
+    ]
+   },
+   {
+    "l1": "Demand Planning",
+    "l2": "Compile Resource Plans",
+    "object": "Labor Deployment Plan",
+    "c": "PLB",
+    "u": [
+     "PM",
+     "BRD"
+    ]
+   },
+   {
+    "l1": "Demand Planning",
+    "l2": "Balance Internal Resource Pool",
+    "object": "Idle Resource Register",
+    "c": "SRD",
+    "u": [
+     "BRD",
+     "PMT",
+     "PEQ"
+    ]
+   },
+   {
+    "l1": "Demand Planning",
+    "l2": "Balance Internal Resource Pool",
+    "object": "Internal Transfer Order",
+    "c": "SRD",
+    "u": [
+     "PMT",
+     "PSK"
+    ]
+   },
+   {
+    "l1": "Demand Planning",
+    "l2": "Approve Procurement Plans",
+    "object": "Procurement Plan",
+    "c": "BRD",
+    "u": [
+     "SRD",
+     "HCP",
+     "PMT"
+    ]
+   },
+   {
+    "l1": "Demand Planning",
+    "l2": "Set Resource Cost Targets",
+    "object": "Resource Cost Target Sheet",
+    "c": "BCM",
+    "u": [
+     "PM",
+     "PCM",
+     "PMT"
+    ]
+   },
+   {
+    "l1": "Sourcing & Contracting",
+    "l2": "Register Suppliers",
+    "object": "Supplier Registration Form",
+    "c": "SUP",
+    "u": [
+     "SRD",
+     "HCP"
+    ]
+   },
+   {
+    "l1": "Sourcing & Contracting",
+    "l2": "Qualify Suppliers",
+    "object": "Supplier Qualification Report",
+    "c": "SRD",
+    "u": [
+     "HCP",
+     "HRD"
+    ]
+   },
+   {
+    "l1": "Sourcing & Contracting",
+    "l2": "Qualify Suppliers",
+    "object": "Qualified Supplier List",
+    "c": "HRD",
+    "u": [
+     "SRD",
+     "BRD",
+     "PMT"
+    ]
+   },
+   {
+    "l1": "Sourcing & Contracting",
+    "l2": "Run Centralized Tenders",
+    "object": "Tender Documents",
+    "c": "HCP",
+    "u": [
+     "SUP",
+     "SRD"
+    ]
+   },
+   {
+    "l1": "Sourcing & Contracting",
+    "l2": "Run Centralized Tenders",
+    "object": "Bid Evaluation Report",
+    "c": "HCP",
+    "u": [
+     "HRD",
+     "HLA"
+    ]
+   },
+   {
+    "l1": "Sourcing & Contracting",
+    "l2": "Run Centralized Tenders",
+    "object": "Award Notice",
+    "c": "HCP",
+    "u": [
+     "SUP",
+     "SRD",
+     "PMT"
+    ]
+   },
+   {
+    "l1": "Sourcing & Contracting",
+    "l2": "Award Framework Agreements",
+    "object": "Framework Agreement",
+    "c": "HCP",
+    "u": [
+     "SRD",
+     "BRD",
+     "PMT",
+     "SUP"
+    ]
+   },
+   {
+    "l1": "Sourcing & Contracting",
+    "l2": "Sign Purchase Contracts",
+    "object": "Material Purchase Contract",
+    "c": "BRD",
+    "u": [
+     "PMT",
+     "PCM",
+     "SUP",
+     "SFN"
+    ]
+   },
+   {
+    "l1": "Sourcing & Contracting",
+    "l2": "Purchase Equipment",
+    "object": "Equipment Purchase Request",
+    "c": "SEQ",
+    "u": [
+     "HRD",
+     "SFN"
+    ]
+   },
+   {
+    "l1": "Sourcing & Contracting",
+    "l2": "Purchase Equipment",
+    "object": "Equipment Acceptance Certificate",
+    "c": "SEQ",
+    "u": [
+     "SFN",
+     "PEQ"
+    ]
+   },
+   {
+    "l1": "Sourcing & Contracting",
+    "l2": "Contract Labor Subcontractors",
+    "object": "Labor Subcontract",
+    "c": "BCM",
+    "u": [
+     "PLB",
+     "PCM",
+     "LSC"
+    ]
+   },
+   {
+    "l1": "Receipt & Mobilization",
+    "l2": "Inspect Incoming Materials",
+    "object": "Material Inspection Record",
+    "c": "PMT",
+    "u": [
+     "PSK",
+     "SUP"
+    ]
+   },
+   {
+    "l1": "Receipt & Mobilization",
+    "l2": "Inspect Incoming Materials",
+    "object": "Material Test Report",
+    "c": "PMT",
+    "u": [
+     "PM",
+     "OWN"
+    ]
+   },
+   {
+    "l1": "Receipt & Mobilization",
+    "l2": "Inspect Incoming Materials",
+    "object": "Nonconformance Report",
+    "c": "PMT",
+    "u": [
+     "SUP",
+     "BRD"
+    ]
+   },
+   {
+    "l1": "Receipt & Mobilization",
+    "l2": "Receive Owner-Supplied Materials",
+    "object": "Owner-Supplied Material Receipt",
+    "c": "PSK",
+    "u": [
+     "OWN",
+     "PCM",
+     "PMT"
+    ]
+   },
+   {
+    "l1": "Receipt & Mobilization",
+    "l2": "Receive Materials into Store",
+    "object": "Goods Receipt Note",
+    "c": "PSK",
+    "u": [
+     "PMT",
+     "PCM",
+     "SFN"
+    ]
+   },
+   {
+    "l1": "Receipt & Mobilization",
+    "l2": "Mobilize Equipment",
+    "object": "Equipment Transfer Order",
+    "c": "SEQ",
+    "u": [
+     "PEQ",
+     "BRD"
+    ]
+   },
+   {
+    "l1": "Receipt & Mobilization",
+    "l2": "Mobilize Equipment",
+    "object": "Equipment Site Acceptance",
+    "c": "PEQ",
+    "u": [
+     "SEQ",
+     "PM"
+    ]
+   },
+   {
+    "l1": "Receipt & Mobilization",
+    "l2": "Register Workers by Real Name",
+    "object": "Worker Real-Name Roster",
+    "c": "PLB",
+    "u": [
+     "LSC",
+     "BRD",
+     "HSV"
+    ]
+   },
+   {
+    "l1": "Receipt & Mobilization",
+    "l2": "Register Workers by Real Name",
+    "object": "Individual Labor Contract",
+    "c": "LSC",
+    "u": [
+     "PLB"
+    ]
+   },
+   {
+    "l1": "Receipt & Mobilization",
+    "l2": "Induct and Train Workers",
+    "object": "Safety Induction Record",
+    "c": "PLB",
+    "u": [
+     "PM",
+     "LSC"
+    ]
+   },
+   {
+    "l1": "Site Operation",
+    "l2": "Issue Materials by Quota",
+    "object": "Quota Requisition Slip",
+    "c": "PMT",
+    "u": [
+     "PSK",
+     "PCM"
+    ]
+   },
+   {
+    "l1": "Site Operation",
+    "l2": "Issue Materials by Quota",
+    "object": "Material Issue Note",
+    "c": "PSK",
+    "u": [
+     "PMT",
+     "PCM",
+     "SFN"
+    ]
+   },
+   {
+    "l1": "Site Operation",
+    "l2": "Manage Turnover Materials",
+    "object": "Turnover Material Ledger",
+    "c": "PMT",
+    "u": [
+     "PSK",
+     "PCM",
+     "BRD"
+    ]
+   },
+   {
+    "l1": "Site Operation",
+    "l2": "Count and Track Inventory",
+    "object": "Stocktake Report",
+    "c": "PSK",
+    "u": [
+     "PMT",
+     "SFN",
+     "BRD"
+    ]
+   },
+   {
+    "l1": "Site Operation",
+    "l2": "Count and Track Inventory",
+    "object": "Material Variance Analysis",
+    "c": "PCM",
+    "u": [
+     "PM",
+     "PMT",
+     "BRD"
+    ]
+   },
+   {
+    "l1": "Site Operation",
+    "l2": "Dispatch Equipment",
+    "object": "Equipment Operation Log",
+    "c": "PEQ",
+    "u": [
+     "SEQ",
+     "PCM"
+    ]
+   },
+   {
+    "l1": "Site Operation",
+    "l2": "Dispatch Equipment",
+    "object": "Fuel Consumption Record",
+    "c": "PEQ",
+    "u": [
+     "PCM"
+    ]
+   },
+   {
+    "l1": "Site Operation",
+    "l2": "Maintain Equipment",
+    "object": "Maintenance Work Order",
+    "c": "PEQ",
+    "u": [
+     "SEQ"
+    ]
+   },
+   {
+    "l1": "Site Operation",
+    "l2": "Maintain Equipment",
+    "object": "Equipment Overhaul Report",
+    "c": "SEQ",
+    "u": [
+     "PEQ",
+     "SFN"
+    ]
+   },
+   {
+    "l1": "Site Operation",
+    "l2": "Inspect Special Equipment",
+    "object": "Special Equip. Inspection Cert.",
+    "c": "SEQ",
+    "u": [
+     "PEQ",
+     "HSV"
+    ]
+   },
+   {
+    "l1": "Site Operation",
+    "l2": "Track Worker Attendance",
+    "object": "Worker Attendance Sheet",
+    "c": "PLB",
+    "u": [
+     "LSC",
+     "PCM"
+    ]
+   },
+   {
+    "l1": "Settlement & Exit",
+    "l2": "Settle Material Accounts",
+    "object": "Supplier Reconciliation Statement",
+    "c": "PMT",
+    "u": [
+     "SUP",
+     "PCM"
+    ]
+   },
+   {
+    "l1": "Settlement & Exit",
+    "l2": "Settle Material Accounts",
+    "object": "Material Settlement Sheet",
+    "c": "PCM",
+    "u": [
+     "BRD",
+     "SFN",
+     "SUP"
+    ]
+   },
+   {
+    "l1": "Settlement & Exit",
+    "l2": "Settle Internal Equipment Leases",
+    "object": "Internal Lease Settlement",
+    "c": "SEQ",
+    "u": [
+     "PCM",
+     "SFN",
+     "PM"
+    ]
+   },
+   {
+    "l1": "Settlement & Exit",
+    "l2": "Settle Labor Subcontracts",
+    "object": "Labor Work Measurement",
+    "c": "PCM",
+    "u": [
+     "LSC",
+     "PLB"
+    ]
+   },
+   {
+    "l1": "Settlement & Exit",
+    "l2": "Settle Labor Subcontracts",
+    "object": "Labor Settlement Sheet",
+    "c": "PCM",
+    "u": [
+     "BCM",
+     "SFN",
+     "LSC"
+    ]
+   },
+   {
+    "l1": "Settlement & Exit",
+    "l2": "Pay Worker Wages",
+    "object": "Wage Payroll",
+    "c": "LSC",
+    "u": [
+     "PLB",
+     "PCM",
+     "SFN",
+     "HSV"
+    ]
+   },
+   {
+    "l1": "Settlement & Exit",
+    "l2": "Demobilize Resources",
+    "object": "Demobilization Checklist",
+    "c": "PM",
+    "u": [
+     "PMT",
+     "PEQ",
+     "PLB"
+    ]
+   },
+   {
+    "l1": "Settlement & Exit",
+    "l2": "Dispose of Surplus and Scrap",
+    "object": "Surplus & Scrap Disposal Request",
+    "c": "PMT",
+    "u": [
+     "BRD",
+     "SRD",
+     "SFN"
+    ]
+   },
+   {
+    "l1": "Settlement & Exit",
+    "l2": "Retire Equipment Assets",
+    "object": "Equipment Retirement Approval",
+    "c": "SEQ",
+    "u": [
+     "HRD",
+     "SFN"
+    ]
+   },
+   {
+    "l1": "Settlement & Exit",
+    "l2": "Evaluate Supplier Performance",
+    "object": "Supplier Performance Scorecard",
+    "c": "BRD",
+    "u": [
+     "SRD",
+     "HRD",
+     "HCP"
+    ]
+   },
+   {
+    "l1": "Finance Management",
+    "l2": "Process Supplier Payments",
+    "object": "Payment Voucher",
+    "c": "SFN",
+    "u": [
+     "SUP",
+     "PCM"
+    ]
+   },
+   {
+    "l1": "Finance Management",
+    "l2": "Verify Tax Invoices",
+    "object": "VAT Invoice",
+    "c": "SUP",
+    "u": [
+     "SFN",
+     "PMT"
+    ]
+   },
+   {
+    "l1": "Finance Management",
+    "l2": "Depreciate Fixed Assets",
+    "object": "Equipment Asset Card",
+    "c": "SFN",
+    "u": [
+     "SEQ"
+    ]
+   },
+   {
+    "l1": "Finance Management",
+    "l2": "Manage Wage Escrow Accounts",
+    "object": "Escrow Wage Payment Record",
+    "c": "SFN",
+    "u": [
+     "PLB",
+     "HSV",
+     "LSC"
+    ]
+   },
+   {
+    "l1": "Legal Affairs",
+    "l2": "Review Contracts",
+    "object": "Contract Legal Opinion",
+    "c": "HLA",
+    "u": [
+     "BRD",
+     "BCM"
+    ]
+   },
+   {
+    "l1": "Human Resources",
+    "l2": "Certify Special Operators",
+    "object": "Operator Certificate Register",
+    "c": "SEQ",
+    "u": [
+     "PEQ",
+     "PLB"
+    ]
+   },
+   {
+    "l1": "Audit & Discipline",
+    "l2": "Audit Procurement",
+    "object": "Procurement Audit Report",
+    "c": "HLA",
+    "u": [
+     "HRD",
+     "HCP"
+    ]
+   }
+  ]
+ },
+ "b3": {
+  "overview": {
+   "rows": [
+    {
+     "name": "Material Supply\n(demand to paid)",
+     "trigger": "Trigger: project material requirement plan\nDelivers: inspected materials on site, settled supplier accounts",
+     "stages": "Demand Planning → Sourcing & Contracting → Receipt & Mobilization → Site Operation → Settlement & Exit",
+     "customer": "Project Dept.\n(internal)",
+     "value": "Right material, right time, at benchmark price; consumption held within norms; no unsettled liabilities"
+    },
+    {
+     "name": "Owned Equipment\n(plan to retirement)",
+     "trigger": "Trigger: equipment deployment plan\nDelivers: equipment working on site, internal lease settled, asset returned or retired",
+     "stages": "Demand Planning → Sourcing & Contracting → Receipt & Mobilization → Site Operation → Settlement & Exit",
+     "customer": "Project Dept.\n(internal)",
+     "value": "High fleet utilization across projects, safe certified operation, lowest lifecycle cost"
+    },
+    {
+     "name": "Labor Services\n(plan to wages paid)",
+     "trigger": "Trigger: labor deployment plan\nDelivers: registered, trained workforce; wages paid in full and on time",
+     "stages": "Demand Planning → Sourcing & Contracting → Receipt & Mobilization → Site Operation → Settlement & Exit",
+     "customer": "Project Dept. and\nworkers",
+     "value": "Compliant real-name workforce, zero wage arrears, labor cost settled against measured work"
+    }
+   ],
+   "note": "Note | A value stream qualifies when it (1) runs end to end from a clear trigger to a clear deliverable, (2) has an identifiable customer, and (3) crosses organization tiers and at least two stages. Streams are cut by resource type because each has its own trigger, customer outcome and settlement logic."
+  },
+  "pages": [
+   {
+    "title": "From Demand to Paid Supplier",
+    "subtitle": "Material Supply",
+    "chain": "Demand Planning → Sourcing & Contracting → Receipt & Mobilization → Site Operation → Settlement & Exit",
+    "stages": [
+     "Demand Planning",
+     "Sourcing & Contracting",
+     "Receipt & Mobilization",
+     "Site Operation",
+     "Settlement & Exit"
+    ],
+    "lanes": [
+     "Group HQ",
+     "Subsidiary",
+     "Branch",
+     "Project Dept.",
+     "External Parties"
+    ],
+    "start_label": "Start",
+    "end_label": "Paid",
+    "nodes": [
+     {
+      "id": "m1",
+      "stage": 0,
+      "lane": 3,
+      "text": "Compile Material\nRequirement Plan",
+      "kind": "act"
+     },
+     {
+      "id": "m1d",
+      "stage": 0,
+      "lane": 3,
+      "text": "Material\nRequirement Plan",
+      "kind": "doc"
+     },
+     {
+      "id": "m2",
+      "stage": 0,
+      "lane": 2,
+      "text": "Review & Approve\nProcurement Plan",
+      "kind": "act"
+     },
+     {
+      "id": "m2d",
+      "stage": 0,
+      "lane": 2,
+      "text": "Procurement\nPlan",
+      "kind": "doc"
+     },
+     {
+      "id": "m3",
+      "stage": 0,
+      "lane": 1,
+      "text": "Balance Idle\nInventory",
+      "kind": "act"
+     },
+     {
+      "id": "m4",
+      "stage": 1,
+      "lane": 0,
+      "text": "Run Centralized\nTender",
+      "kind": "act"
+     },
+     {
+      "id": "m4d",
+      "stage": 1,
+      "lane": 0,
+      "text": "Framework\nAgreement",
+      "kind": "doc"
+     },
+     {
+      "id": "m6",
+      "stage": 1,
+      "lane": 2,
+      "text": "Sign Purchase\nContract",
+      "kind": "act"
+     },
+     {
+      "id": "m6d",
+      "stage": 1,
+      "lane": 2,
+      "text": "Material Purchase\nContract",
+      "kind": "doc"
+     },
+     {
+      "id": "m7",
+      "stage": 2,
+      "lane": 4,
+      "text": "Deliver Materials",
+      "kind": "act"
+     },
+     {
+      "id": "m8",
+      "stage": 2,
+      "lane": 3,
+      "text": "Inspect & Receive\nMaterials",
+      "kind": "act"
+     },
+     {
+      "id": "m8d",
+      "stage": 2,
+      "lane": 3,
+      "text": "Goods Receipt\nNote",
+      "kind": "doc"
+     },
+     {
+      "id": "m9",
+      "stage": 3,
+      "lane": 3,
+      "text": "Issue Materials\nby Quota",
+      "kind": "act"
+     },
+     {
+      "id": "m9d",
+      "stage": 3,
+      "lane": 3,
+      "text": "Material\nIssue Note",
+      "kind": "doc"
+     },
+     {
+      "id": "m10",
+      "stage": 3,
+      "lane": 3,
+      "text": "Stocktake &\nVariance Analysis",
+      "kind": "act"
+     },
+     {
+      "id": "m11",
+      "stage": 4,
+      "lane": 3,
+      "text": "Reconcile Supplier\nStatement",
+      "kind": "act"
+     },
+     {
+      "id": "m12",
+      "stage": 4,
+      "lane": 4,
+      "text": "Confirm\nStatement",
+      "kind": "act"
+     },
+     {
+      "id": "m13",
+      "stage": 4,
+      "lane": 2,
+      "text": "Approve Material\nSettlement",
+      "kind": "act"
+     },
+     {
+      "id": "m13d",
+      "stage": 4,
+      "lane": 2,
+      "text": "Material\nSettlement Sheet",
+      "kind": "doc"
+     },
+     {
+      "id": "m14",
+      "stage": 4,
+      "lane": 1,
+      "text": "Pay Supplier",
+      "kind": "act"
+     },
+     {
+      "id": "m15",
+      "stage": 4,
+      "lane": 0,
+      "text": "Update Supplier\nCredit",
+      "kind": "act"
+     }
+    ],
+    "links": [
+     [
+      "m1",
+      "m2"
+     ],
+     [
+      "m2",
+      "m3"
+     ],
+     [
+      "m3",
+      "m4"
+     ],
+     [
+      "m4",
+      "m6"
+     ],
+     [
+      "m6",
+      "m7"
+     ],
+     [
+      "m7",
+      "m8"
+     ],
+     [
+      "m8",
+      "m9"
+     ],
+     [
+      "m9",
+      "m10"
+     ],
+     [
+      "m10",
+      "m11"
+     ],
+     [
+      "m11",
+      "m12"
+     ],
+     [
+      "m12",
+      "m13"
+     ],
+     [
+      "m13",
+      "m14"
+     ],
+     [
+      "m13",
+      "m15"
+     ]
+    ],
+    "legend": "Internal service stream: triggered by project material demand, ends with supplier paid; settlement results feed supplier credit"
+   },
+   {
+    "title": "From Deployment Plan to Retirement",
+    "subtitle": "Owned Equipment",
+    "chain": "Demand Planning → Sourcing & Contracting → Receipt & Mobilization → Site Operation → Settlement & Exit",
+    "stages": [
+     "Demand Planning",
+     "Sourcing & Contracting",
+     "Receipt & Mobilization",
+     "Site Operation",
+     "Settlement & Exit"
+    ],
+    "lanes": [
+     "Group HQ",
+     "Subsidiary",
+     "Branch",
+     "Project Dept.",
+     "External Parties"
+    ],
+    "start_label": "Start",
+    "end_label": "Retired",
+    "nodes": [
+     {
+      "id": "e1",
+      "stage": 0,
+      "lane": 3,
+      "text": "Compile Equipment\nDeployment Plan",
+      "kind": "act"
+     },
+     {
+      "id": "e1d",
+      "stage": 0,
+      "lane": 3,
+      "text": "Equipment\nDeployment Plan",
+      "kind": "doc"
+     },
+     {
+      "id": "e2",
+      "stage": 0,
+      "lane": 1,
+      "text": "Match Idle\nEquipment",
+      "kind": "act"
+     },
+     {
+      "id": "e3",
+      "stage": 1,
+      "lane": 0,
+      "text": "Approve Fleet\nInvestment",
+      "kind": "act"
+     },
+     {
+      "id": "e3d",
+      "stage": 1,
+      "lane": 0,
+      "text": "Fleet Investment\nPlan",
+      "kind": "doc"
+     },
+     {
+      "id": "e4",
+      "stage": 1,
+      "lane": 1,
+      "text": "Tender Equipment\nPurchase",
+      "kind": "act"
+     },
+     {
+      "id": "e5",
+      "stage": 1,
+      "lane": 4,
+      "text": "Supply New\nEquipment",
+      "kind": "act"
+     },
+     {
+      "id": "e6",
+      "stage": 2,
+      "lane": 1,
+      "text": "Issue Transfer\nOrder",
+      "kind": "act"
+     },
+     {
+      "id": "e6d",
+      "stage": 2,
+      "lane": 1,
+      "text": "Equipment\nTransfer Order",
+      "kind": "doc"
+     },
+     {
+      "id": "e7",
+      "stage": 2,
+      "lane": 3,
+      "text": "Accept Equipment\non Site",
+      "kind": "act"
+     },
+     {
+      "id": "e8",
+      "stage": 3,
+      "lane": 3,
+      "text": "Dispatch &\nLog Operation",
+      "kind": "act"
+     },
+     {
+      "id": "e8d",
+      "stage": 3,
+      "lane": 3,
+      "text": "Equipment\nOperation Log",
+      "kind": "doc"
+     },
+     {
+      "id": "e9",
+      "stage": 3,
+      "lane": 3,
+      "text": "Preventive\nMaintenance",
+      "kind": "act"
+     },
+     {
+      "id": "e10",
+      "stage": 2,
+      "lane": 4,
+      "text": "Statutory\nInspection",
+      "kind": "act"
+     },
+     {
+      "id": "e11",
+      "stage": 3,
+      "lane": 0,
+      "text": "Supervise\nEquipment Safety",
+      "kind": "act"
+     },
+     {
+      "id": "e12",
+      "stage": 4,
+      "lane": 1,
+      "text": "Calculate Internal\nLease Charges",
+      "kind": "act"
+     },
+     {
+      "id": "e12d",
+      "stage": 4,
+      "lane": 1,
+      "text": "Internal Lease\nSettlement",
+      "kind": "doc"
+     },
+     {
+      "id": "e13",
+      "stage": 4,
+      "lane": 3,
+      "text": "Confirm Lease\nCharges",
+      "kind": "act"
+     },
+     {
+      "id": "e14",
+      "stage": 4,
+      "lane": 3,
+      "text": "Return Equipment\nto Pool",
+      "kind": "act"
+     },
+     {
+      "id": "e15",
+      "stage": 4,
+      "lane": 0,
+      "text": "Approve\nRetirement",
+      "kind": "act"
+     }
+    ],
+    "links": [
+     [
+      "e1",
+      "e2"
+     ],
+     [
+      "e2",
+      "e6"
+     ],
+     [
+      "e2",
+      "e3"
+     ],
+     [
+      "e3",
+      "e4"
+     ],
+     [
+      "e4",
+      "e5"
+     ],
+     [
+      "e5",
+      "e6"
+     ],
+     [
+      "e6",
+      "e7"
+     ],
+     [
+      "e7",
+      "e10"
+     ],
+     [
+      "e10",
+      "e8"
+     ],
+     [
+      "e8",
+      "e9"
+     ],
+     [
+      "e8",
+      "e11"
+     ],
+     [
+      "e8",
+      "e12"
+     ],
+     [
+      "e12",
+      "e13"
+     ],
+     [
+      "e13",
+      "e14"
+     ],
+     [
+      "e14",
+      "e15"
+     ]
+    ],
+    "legend": "Asset stream: owned fleet moves between projects via internal lease; returned equipment re-enters the pool or is retired"
+   },
+   {
+    "title": "From Labor Plan to Wages Paid",
+    "subtitle": "Labor Services",
+    "chain": "Demand Planning → Sourcing & Contracting → Receipt & Mobilization → Site Operation → Settlement & Exit",
+    "stages": [
+     "Demand Planning",
+     "Sourcing & Contracting",
+     "Receipt & Mobilization",
+     "Site Operation",
+     "Settlement & Exit"
+    ],
+    "lanes": [
+     "Group HQ",
+     "Subsidiary",
+     "Branch",
+     "Project Dept.",
+     "External Parties"
+    ],
+    "start_label": "Start",
+    "end_label": "Paid",
+    "nodes": [
+     {
+      "id": "l1",
+      "stage": 0,
+      "lane": 3,
+      "text": "Compile Labor\nDeployment Plan",
+      "kind": "act"
+     },
+     {
+      "id": "l1d",
+      "stage": 0,
+      "lane": 3,
+      "text": "Labor Deployment\nPlan",
+      "kind": "doc"
+     },
+     {
+      "id": "l2",
+      "stage": 1,
+      "lane": 0,
+      "text": "Maintain Qualified\nSubcontractors",
+      "kind": "act"
+     },
+     {
+      "id": "l3",
+      "stage": 1,
+      "lane": 2,
+      "text": "Select Labor\nSubcontractor",
+      "kind": "act"
+     },
+     {
+      "id": "l4",
+      "stage": 1,
+      "lane": 2,
+      "text": "Sign Labor\nSubcontract",
+      "kind": "act"
+     },
+     {
+      "id": "l4d",
+      "stage": 1,
+      "lane": 2,
+      "text": "Labor\nSubcontract",
+      "kind": "doc"
+     },
+     {
+      "id": "l6",
+      "stage": 2,
+      "lane": 4,
+      "text": "Mobilize Workers",
+      "kind": "act"
+     },
+     {
+      "id": "l7",
+      "stage": 2,
+      "lane": 3,
+      "text": "Register Workers\nby Real Name",
+      "kind": "act"
+     },
+     {
+      "id": "l7d",
+      "stage": 2,
+      "lane": 3,
+      "text": "Worker Real-Name\nRoster",
+      "kind": "doc"
+     },
+     {
+      "id": "l8",
+      "stage": 2,
+      "lane": 3,
+      "text": "Safety Induction\n& Briefing",
+      "kind": "act"
+     },
+     {
+      "id": "l9",
+      "stage": 3,
+      "lane": 3,
+      "text": "Record Daily\nAttendance",
+      "kind": "act"
+     },
+     {
+      "id": "l9d",
+      "stage": 3,
+      "lane": 3,
+      "text": "Worker Attendance\nSheet",
+      "kind": "doc"
+     },
+     {
+      "id": "l10",
+      "stage": 4,
+      "lane": 3,
+      "text": "Measure Labor\nWork Done",
+      "kind": "act"
+     },
+     {
+      "id": "l11",
+      "stage": 4,
+      "lane": 4,
+      "text": "Prepare Wage\nPayroll",
+      "kind": "act"
+     },
+     {
+      "id": "l11d",
+      "stage": 4,
+      "lane": 4,
+      "text": "Wage Payroll",
+      "kind": "doc"
+     },
+     {
+      "id": "l12",
+      "stage": 4,
+      "lane": 3,
+      "text": "Confirm Payroll\nwith Workers",
+      "kind": "act"
+     },
+     {
+      "id": "l13",
+      "stage": 4,
+      "lane": 2,
+      "text": "Approve Labor\nSettlement",
+      "kind": "act"
+     },
+     {
+      "id": "l14",
+      "stage": 4,
+      "lane": 1,
+      "text": "Pay via Wage\nEscrow Account",
+      "kind": "act"
+     },
+     {
+      "id": "l15",
+      "stage": 4,
+      "lane": 0,
+      "text": "Monitor Wage\nCompliance",
+      "kind": "act"
+     }
+    ],
+    "links": [
+     [
+      "l1",
+      "l3"
+     ],
+     [
+      "l2",
+      "l3"
+     ],
+     [
+      "l3",
+      "l4"
+     ],
+     [
+      "l4",
+      "l6"
+     ],
+     [
+      "l6",
+      "l7"
+     ],
+     [
+      "l7",
+      "l8"
+     ],
+     [
+      "l8",
+      "l9"
+     ],
+     [
+      "l9",
+      "l10"
+     ],
+     [
+      "l9",
+      "l11"
+     ],
+     [
+      "l11",
+      "l12"
+     ],
+     [
+      "l10",
+      "l13"
+     ],
+     [
+      "l12",
+      "l14"
+     ],
+     [
+      "l13",
+      "l14"
+     ],
+     [
+      "l14",
+      "l15"
+     ]
+    ],
+    "legend": "Compliance-critical stream: real-name attendance drives payroll; wages go straight to workers via the escrow account"
+   }
+  ]
+ },
+ "provenance": {
+  "mode": "draft"
+ },
+ "external_refs": [
+  "Payment Voucher"
+ ],
+ "profile": "generic-en"
+}

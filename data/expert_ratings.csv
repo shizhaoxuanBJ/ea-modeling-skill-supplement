@@ -1,0 +1,29 @@
+view_id,round,domain,producer,E1_syntax,E2_syntax,E3_syntax,E4_syntax,E5_syntax,syntax_mean,E1_semantics,E2_semantics,E3_semantics,E4_semantics,E5_semantics,semantics_mean
+S2-V01,2,Finance,"IT staff, application group A",3,3,3,4,3,3.2,3,3,2,3,3,2.8
+S2-V02,2,Finance,"IT staff, data group A",3,2,3,3,3,2.8,2,2,3,2,2,2.2
+S2-V03,2,Finance,"IT staff, technology group A",2,2,3,2,2,2.2,2,1,2,2,2,1.8
+S2-V04,2,Finance,"IT staff, application group B",4,3,4,3,4,3.6,3,3,3,3,3,3
+S2-V05,2,Procurement,"IT staff, application group C",3,3,2,3,3,2.8,2,3,2,2,3,2.4
+S2-V06,2,Procurement,"IT staff, data group B",2,3,2,2,3,2.4,2,2,2,2,2,2
+S2-V07,2,Procurement,"IT staff, technology group B",3,4,3,3,3,3.2,3,3,3,2,3,2.8
+S2-V08,2,Procurement,"IT staff, application group D",2,2,2,3,2,2.2,2,2,1,2,2,1.8
+S2-V09,2,Sales,"IT staff, application group E",3,3,4,3,3,3.2,3,2,3,3,2,2.6
+S2-V10,2,Sales,"IT staff, data group C",4,4,3,4,3,3.6,3,3,3,4,3,3.2
+S2-V11,2,Sales,"IT staff, technology group C",3,2,3,3,2,2.6,2,2,2,3,2,2.2
+S2-V12,2,Contract,"IT staff, application group F",2,3,2,3,2,2.4,2,2,2,2,2,2
+S2-V13,2,Contract,"IT staff, data group D",3,3,3,4,4,3.4,3,3,2,3,3,2.8
+S2-V14,2,Contract,"IT staff, technology group D",3,3,3,2,3,2.8,2,3,2,2,2,2.2
+S2-V15,2,Treasury,"IT staff, application group G",4,3,3,4,3,3.4,3,3,3,3,3,3
+S2-V16,2,Treasury,"IT staff, data group E",3,3,3,2,3,2.8,2,3,2,3,2,2.4
+S3-V01,3,Finance,"Skill, core view 1",5,5,5,5,5,5,5,5,5,4,5,4.8
+S3-V02,3,Finance,"Skill, core view 2",5,5,4,5,5,4.8,5,4,5,5,4,4.6
+S3-V03,3,Finance,"Skill, core view 3",5,5,5,5,5,5,5,5,5,5,5,5
+S3-V04,3,Procurement,"Skill, core view 1",5,4,5,5,5,4.8,4,5,4,5,5,4.6
+S3-V05,3,Procurement,"Skill, core view 2",4,5,5,4,5,4.6,4,4,5,4,4,4.2
+S3-V06,3,Sales,"Skill, core view 1",5,5,5,5,5,5,5,5,5,5,4,4.8
+S3-V07,3,Sales,"Skill, core view 2",5,5,4,5,5,4.8,5,4,4,5,5,4.6
+S3-V08,3,Contract,"Skill, core view 1",5,4,5,4,4,4.4,4,4,4,4,5,4.2
+S3-V09,3,Contract,"Skill, core view 2",5,5,5,5,5,5,5,5,5,5,5,5
+S3-V10,3,Treasury,"Skill, core view 1",4,5,5,5,5,4.8,4,5,5,4,5,4.6
+S3-V11,3,Treasury,"Skill, core view 2",5,5,5,4,5,4.8,5,5,4,5,5,4.8
+S3-V12,3,Treasury,"Skill, core view 3",5,4,5,5,5,4.8,5,4,5,4,5,4.6

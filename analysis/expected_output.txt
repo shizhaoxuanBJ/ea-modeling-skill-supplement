@@ -1,0 +1,6 @@
+syntax   : Round 2 2.91 (SD 0.47, n=16), Round 3 4.82 (SD 0.18, n=12); Mann-Whitney U=192, exact p=6.6e-08, rank-biserial r=1.00; ICC(2,5) all=0.961, Round 2=0.78, Round 3=0.02
+semantics: Round 2 2.45 (SD 0.45, n=16), Round 3 4.65 (SD 0.26, n=12); Mann-Whitney U=192, exact p=6.6e-08, rank-biserial r=1.00; ICC(2,5) all=0.973, Round 2=0.83, Round 3=0.35
+Round-2 same-domain similarity: 19 pairs, mean 41.2%, SD 6.8 pp, range 31.9%-52.5%
+Cross-domain conflicts, Round 2: C1 11, C2 14, C3 9, total 34; Round 3 total 0
+Round-2 view coding (16 view sets): Po=0.901, Pe=0.284, Cohen's kappa=0.86
+Interview coding (23 interviews): Po=0.860, Pe=0.205, Cohen's kappa=0.82

@@ -1,0 +1,5 @@
+category,initial_patterns_round3,added_by_governance,total_after_governance,typical_constraint
+Granularity and layering,18,1,19,Do not abstract CRUD pages or pop-ups of one system into separate services; reference group-wide systems as one level-1 component
+Relationship types and cross-layer mapping,15,1,16,Do not replace cross-layer Realization or Serving with Composition or Association
+Semantic grounding and handling of legacy systems,15,2,17,"No cross-system links without support in regulations or ledgers; rules for retaining, migrating or retiring subsidiaries' self-built systems"
+Total,48,4,52,Plus 2 validation rules added through governance

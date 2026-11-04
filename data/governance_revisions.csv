@@ -1,0 +1,4 @@
+revision,week,issue_ruled,new_negative_patterns,new_validation_rules,regression_runs,recurrences
+REV-01,11,Retention standard for subsidiaries' legacy treasury systems,2,1,10,0
+REV-02,13,Ownership of supplier and customer master data,1,1,10,0
+REV-03,15,Boundary of material and equipment ledgers for look-through supervision,1,0,5,0

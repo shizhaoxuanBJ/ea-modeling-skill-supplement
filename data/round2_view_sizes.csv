@@ -1,0 +1,17 @@
+view_id,domain,producer,business_elements,data_elements,application_elements,technology_elements,V_elements,E_relationships,V_plus_E,typical_deviations
+S2-V01,Finance,"IT staff, application group A",6,5,8,3,22,26,48,Consolidated reporting modeled as a single component; tax master-data interface missing.
+S2-V02,Finance,"IT staff, data group A",4,11,6,2,23,25,48,Data-table-centred view; Association used for all cross-layer relationships.
+S2-V03,Finance,"IT staff, technology group A",3,4,16,7,30,38,68,Consolidated reporting split into 5 microservices and 11 CRUD pop-up pages; business role linked directly to a database.
+S2-V04,Finance,"IT staff, application group B",7,6,9,3,25,29,54,Bank-enterprise direct-connection channel modeled as a business service instead of an application interface; fabricated automatic freezing link between finance and legal.
+S2-V05,Procurement,"IT staff, application group C",8,5,9,3,25,28,53,A single procurement reconciliation page promoted to a level-1 business capability; supplier master data conflicts with the finance domain's customer/supplier master data.
+S2-V06,Procurement,"IT staff, data group B",5,10,7,2,24,26,50,E-tendering system split into 4 components along its database tables; Composition used instead of Realization.
+S2-V07,Procurement,"IT staff, technology group B",6,5,11,5,27,31,58,"All self-built material procurement systems of second-tier subsidiaries marked as independently retained, contrary to the group-wide ""one architecture"" principle."
+S2-V08,Procurement,"IT staff, application group D",4,4,14,4,26,34,60,Fabricated real-time link between the procurement platform and a foreign tax system (LLM association); approval buttons modeled as separate application services.
+S2-V09,Sales,"IT staff, application group E",7,5,8,3,23,25,48,"Clear boundary between bid management and contract archiving, but the customer/supplier master-data interface drawn as a one-way push from the sales system to the master-data system."
+S2-V10,Sales,"IT staff, data group C",6,8,7,3,24,27,51,Fairly complete four-layer structure; overlaps with S2-V09 in core components but the call direction of the revenue-recognition interface is reversed.
+S2-V11,Sales,"IT staff, technology group C",4,4,13,6,27,33,60,CRM split into 7 technical components along microservice gateway routes; value-stream step linked directly to the underlying message queue.
+S2-V12,Contract,"IT staff, application group F",5,4,12,3,24,30,54,Each countersigning step of the contract approval flow drawn as a separate application component; fabricated link by which the legal system automatically deducts project funds.
+S2-V13,Contract,"IT staff, data group D",6,9,8,3,26,28,54,"Contract master data includes subcontract and labour-contract entities, but its key and ownership definition contradict the procurement domain's contract ledger."
+S2-V14,Contract,"IT staff, technology group D",5,5,10,5,25,29,54,Flow and Serving relationships mixed; self-built legal systems of second-tier subsidiaries marked as retained.
+S2-V15,Treasury,"IT staff, application group G",7,6,9,4,26,30,56,"Complete treasury payment and funds-planning chain, but the treasury system split into 3 subsystems, inconsistent with the single treasury component in the finance domain."
+S2-V16,Treasury,"IT staff, data group E",5,9,8,3,25,27,52,"Focus on fund flows and account master data; similarity with S2-V15 is 47.2% (GED = 57, total size 56 + 52 = 108)."
